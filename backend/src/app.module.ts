@@ -6,10 +6,10 @@ import { ProductModule } from './product/product.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/products-nest', {
-      useNewUrlParser: true,
-      useFindAndModify: false,
-      useCreateIndex: true
+    MongooseModule.forRoot('mongodb://localhost:27017/products-nest', {
+      useNewUrlParser: true
+     // useFindAndModify: true,
+     // useCreateIndex: true
     }),
     ProductModule
   ],
